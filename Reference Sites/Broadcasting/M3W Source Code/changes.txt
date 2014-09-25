@@ -1,0 +1,7 @@
+Changes from 1.7 to 1.8
+
+Bug fixed in parsing arguments that caused the help file to pop up.
+Resizing the main window improved in preparation to starting minimized.
+Renamed the flags to set the soundcard n to N and q to Q
+because they where already used.
+added flags for starting minimized, recording, listening, broadcasting, and playing.

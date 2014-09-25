@@ -1,0 +1,200 @@
+#m3w configfile: C:\home\m3w\src\default.m3w
+
+
+#the server where to send the request
+server localhost
+
+#the port where to send the request
+port 8000
+
+#the mountpoint
+mountpoint live
+
+#the login type
+logintype 0
+
+#the user name
+user source
+
+#the password
+password topsecret
+
+#a description for the stream
+description 
+
+#the stream bitrate
+bitrate 64000
+
+#to make the stream private
+#private
+
+#the stream minimum bitrate
+min 0
+
+#the stream maxium bitrate
+max 0
+
+#the encoder bitrate mode (0=abr,1=vbr,2=cbr,3=pre)
+bitmode 0
+
+#the lame encoder mode preset value
+presetvalue 5000
+
+#set flag to switch on appending output
+append
+
+#set flag to switch off appending output
+#overwrite
+
+#set flag to switch on automatic output file name
+#autoname
+
+#set a common prefix to the automatic output file name
+autonameprefix 
+
+#the stream name
+name 
+
+#the stream genre
+genre 
+
+#the place where to get information
+url 
+
+#filename for a remote dump
+remotedump 
+
+#filename for a local recording
+recordfile 
+
+#maximum time to buffer soundcard
+inbuffer 5
+
+#maximum time to buffer network
+outbuffer 20
+
+#set flag to mark copies
+#copyflag
+
+#set flag to generate crc
+#crcflag
+
+#set flag to indicate copyright
+#copyright
+
+#set flag to disable downsampling
+#downsampleflag
+
+#set flag to disable bitreservoir
+#reservoirflag
+
+#the bitrate quality value
+quality 5
+
+#the encoder quality value
+encoderquality 2
+
+#set flag to choose true stereo
+#stereo
+
+#the ID3 Tag year
+tagyear 2000
+
+#the ID3 Tag track
+tagtrack 0
+
+#the ID3 Tag genre
+taggenre 12
+
+#the ID3 Tag title
+tagtitle 
+
+#the ID3 Tag artist
+tagartist 
+
+#the ID3 Tag album
+tagalbum 
+
+#the ID3 Tag comment
+tagcomment 
+
+#the soundcard number
+soundcard 0
+
+#the sound format number
+soundformat 11
+
+#the Name of Input File
+inputfile 
+
+#set flag to start minimized
+#minimized
+
+#set flag to start recording
+#recording
+
+#set flag to start broadcasting
+#broadcasting
+
+#set flag to start playing
+#playing
+
+#set flag to start listening
+#listening
+
+#the autogain silence level
+silence -55
+
+#the autogain low level
+lowlevel -40
+
+#the autogain high level
+highlevel -6
+
+#the autogain step level
+steplevel 2
+
+#the autogain flag
+#autogain
+
+#the volume compressor rise time
+risetime 30
+
+#the volume compressor fall time
+falltime 10
+
+#the volume compressor level
+compress -6
+
+#the volume compressor noise attenuation
+noiseatten 0
+
+#the volume compressor flag
+#volumecompress
+
+#the auto reconnect flag
+#autoreconnect
+
+#the initial auto reconnect delay
+rcidelay 60
+
+#the auto reconnect delay
+rcdelay 60
+
+#the auto reconnect count
+rccount 3
+
+#the error as message flag
+#noerror
+
+#display linear meter scale
+#linearscale
+
+#display input meter scale
+#inputscale
+
+#set flag to repeat a playing input file
+#repeat
+
+#set flag to start with a detached volume meter
+#detachmeter

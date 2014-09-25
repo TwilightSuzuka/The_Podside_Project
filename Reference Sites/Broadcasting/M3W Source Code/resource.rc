@@ -1,0 +1,421 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 355, 163
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Soundcard",IDC_STATIC,2,0,115,75
+    LTEXT           "",IDC_SOUNDCARDNAME,6,10,105,8
+    LTEXT           "",IDC_SOUNDCARDFORMAT,6,20,105,8
+    LTEXT           "Bytes: ",IDC_STATIC,6,30,45,8
+    RTEXT           "",IDC_SOUNDBYTES,50,30,60,8
+    CONTROL         "",IDC_INPROGRES,"msctls_progress32",0x0,7,40,103,8
+    PUSHBUTTON      "Play",IDC_SOUNDPLAY,7,50,20,20,BS_ICON
+    PUSHBUTTON      "Stop",IDC_SOUNDSTOP,30,50,20,20,BS_ICON
+    LTEXT           "",IDC_LISTEN_INDICATOR,55,55,50,8
+    GROUPBOX        "Volume Control",IDC_VOLUMECONTROL,2,75,115,75
+    CONTROL         "Log",IDC_LOG,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,7,112,24,10
+    CONTROL         "Lin",IDC_LIN,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,33,112,24,10
+    CONTROL         "Out",IDC_OUT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,59,112,24,10
+    CONTROL         "In",IDC_IN,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,85,112,24,10
+    CONTROL         "Automatic Gain Control",IDC_AUTOGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,95,10
+    CONTROL         "Volume Compression",IDC_AUTOVOLUME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,136,95,10
+    GROUPBOX        "Encoder",IDC_ENCODER,120,0,115,75
+    LTEXT           "",IDC_ENCODERNAME,125,10,105,8
+    LTEXT           "",IDC_ENCODERMODE,125,20,105,8
+    LTEXT           "Bitrate (bit/s) :",IDC_STATIC,125,30,45,8
+    RTEXT           "",IDC_ENCODERBITRATE,170,30,60,8
+    LTEXT           "True Bitrate (bit/2):",IDC_STATIC,125,40,45,8
+    RTEXT           "",IDC_ENCODERTRUERATE,170,40,60,8
+    LTEXT           "Bytes in :",IDC_STATIC,125,50,45,8
+    RTEXT           "",IDC_ENCODERIN,170,50,60,8
+    LTEXT           "Bytes out :",IDC_STATIC,125,60,45,8
+    RTEXT           "",IDC_ENCODEROUT,170,60,60,8
+    GROUPBOX        "Input File",IDC_INFILE,120,75,115,75
+    CONTROL         "Repeat",IDC_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,100,55,10
+    COMBOBOX        IDC_INPUTLIST,125,85,105,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_INSTOP,175,125,20,20,BS_ICON
+    PUSHBUTTON      "Play",IDC_INPLAY,125,125,20,20,BS_ICON
+    PUSHBUTTON      "Pause",IDC_INPAUSE,150,125,20,20,BS_ICON
+    LTEXT           "",IDC_PLAY_INDICATOR,199,130,33,8,NOT WS_GROUP
+    GROUPBOX        "Broadcast",IDC_BROADCAST,240,0,115,75
+    LTEXT           "",IDC_SENDNAME,245,10,105,8
+    LTEXT           "Bitrate (bit/s) :",IDC_STATIC,245,20,45,8
+    RTEXT           "0",IDC_SENDBITRATE,290,20,60,8
+    LTEXT           "Bytes :",IDC_STATIC,245,30,45,8
+    RTEXT           "0",IDC_SENDBYTES,290,30,60,8
+    CONTROL         "",IDC_OUTPROGRES,"msctls_progress32",0x0,245,40,105,8
+    LTEXT           "",IDC_SEND_INDICATOR,295,56,50,8
+    PUSHBUTTON      "Send",IDC_SEND,245,50,20,20,BS_ICON
+    PUSHBUTTON      "Stop",IDC_SENDSTOP,270,50,20,20,BS_ICON
+    GROUPBOX        "Output File",IDC_OUTFILE,240,75,115,75
+    LTEXT           "",IDC_OUTFILENAME,245,85,105,8
+    CONTROL         "Append",IDC_RECORD_APPEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,245,95,45,10
+    CONTROL         "Autoname",IDC_RECORD_AUTONAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,295,95,55,10
+    LTEXT           "Bytes: ",IDC_STATIC,245,105,40,8
+    RTEXT           "0",IDC_OUTSIZE,285,105,65,8
+    LTEXT           "",IDC_RECORD_INDICATOR,295,131,50,8
+    PUSHBUTTON      "Stop",IDC_OUTSTOP,270,125,20,20,BS_ICON
+    PUSHBUTTON      "Record",IDC_RECORD,245,125,20,20,BS_ICON
+    CONTROL         "",IDC_MESSAGETICKER,"Static",SS_SIMPLE | SS_NOPREFIX | WS_BORDER | WS_GROUP,0,151,355,12
+END
+
+IDD_VOLUMECOMPRESSION DIALOGEX 0, 0, 240, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Volume Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Gain Control",IDC_STATIC,5,5,230,75
+    RTEXT           "High Level",IDC_STATIC,10,19,70,8
+    EDITTEXT        IDC_AG_HIGH,185,17,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,215,19,10,8
+    RTEXT           "Low Level",IDC_STATIC,10,34,70,8
+    EDITTEXT        IDC_AG_LOW,185,32,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,215,34,10,8
+    RTEXT           "Noise Level",IDC_STATIC,10,49,70,8
+    EDITTEXT        IDC_AG_SILENCE,185,47,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,215,49,10,8
+    RTEXT           "Step Level",IDC_STATIC,10,64,70,8
+    EDITTEXT        IDC_AG_STEP,185,62,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,215,64,10,8
+    GROUPBOX        "Volume Compression",IDC_STATIC,5,85,230,75
+    RTEXT           "Compress -20dB to",IDC_STATIC,10,99,70,8
+    EDITTEXT        IDC_COMPRESS,185,97,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,215,99,10,8
+    RTEXT           "Rise time",IDC_STATIC,10,114,70,8
+    EDITTEXT        IDC_RISETIME,185,112,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,215,114,10,8
+    RTEXT           "Fall time",IDC_STATIC,10,129,70,8
+    EDITTEXT        IDC_FALLTIME,185,127,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "sec",IDC_STATIC,215,129,10,8
+    RTEXT           "Noise atten",IDC_STATIC,10,144,70,8
+    EDITTEXT        IDC_NOISEGAIN,185,141,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,215,144,10,8
+    DEFPUSHBUTTON   "OK",IDOK,185,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,164,50,14
+    CONTROL         "",IDC_SLIDER_HIGH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,15,100,15
+    CONTROL         "",IDC_SLIDER_LOW,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,30,100,15
+    CONTROL         "",IDC_SLIDER_SILENCE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,45,100,15
+    CONTROL         "",IDC_SLIDER_STEP,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,60,100,15
+    CONTROL         "",IDC_SLIDER_COMPRESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,95,100,15
+    CONTROL         "",IDC_SLIDER_RISETIME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,110,100,15
+    CONTROL         "",IDC_SLIDER_FALLTIME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,125,100,15
+    CONTROL         "",IDC_SLIDER_NOISEGAIN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,140,100,15
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 185, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,70,50,14
+    CTEXT           "m3w - A streamer to bring mp3 to the www",IDC_STATIC,0,10,185,8
+    CTEXT           "Version X.y",IDC_VERSION,0,25,185,8
+    CTEXT           "© Martin Ruckert 2003",IDC_COPYRIGHT,0,45,185,8
+END
+
+IDD_ENCODER DIALOG  0, 0, 190, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Encoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Encoding",IDC_STATIC,5,0,70,70
+    CONTROL         "Constant",IDC_ENCODERCONST,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,10,10,45,10
+    CONTROL         "Variable",IDC_ENCODERVAR,"Button",BS_AUTORADIOBUTTON,10,20,45,10
+    CONTROL         "Average",IDC_ENCODERAVG,"Button",BS_AUTORADIOBUTTON,10,30,45,10
+    CONTROL         "Preset",IDC_ENCODERPRE,"Button",BS_AUTORADIOBUTTON,10,40,45,10
+    COMBOBOX        IDC_ENCODERQUALITY,10,53,25,65,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Quality",IDC_STATIC,40,55,25,8,SS_NOTIFY
+    GROUPBOX        "Bitrate",IDC_STATIC,80,0,105,70
+    LTEXT           "Bitrate (bit/s)",IDC_TXT_BITRATE,85,10,55,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ENCODER_BITRATE,140,8,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Minimum (bit/s)",IDC_TXT_MINBITRATE,85,25,55,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ENCODER_MINBITRATE,140,23,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Maximum (bit/s)",IDC_TXT_MAXBITRATE,85,40,55,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ENCODER_MAXBITRATE,140,38,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Target Quality",IDC_TXT_QUALITY,85,10,55,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_TARGET_QUALITY,140,8,40,65,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Presets",IDC_TXT_PRESETS,85,10,35,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_ENCODER_PRESETS,120,8,60,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Mode",IDC_MODE,5,70,70,35
+    CONTROL         "Joint Stereo",IDC_JOINT_STEREO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,10,80,55,10
+    CONTROL         "Stereo",IDC_STEREO,"Button",BS_AUTORADIOBUTTON,10,90,55,10
+    GROUPBOX        "Options",IDC_STATIC,80,70,105,35
+    CONTROL         "disable Downsampling",IDC_DOWNSAMPLE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,85,80,95,10
+    CONTROL         "disable Bitreservoir",IDC_RESERVOIR,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,85,90,95,10
+    GROUPBOX        "Flags",IDC_STATIC,5,105,70,45
+    CONTROL         "Original",IDC_ORIGINAL,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,115,60,10
+    CONTROL         "Insert CRC",IDC_CRC,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,125,60,10
+    CONTROL         "Copyright",IDC_COPYRIGHT,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,135,60,10
+    DEFPUSHBUTTON   "OK",IDOK,135,115,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,135,50,14
+    LTEXT           "For Information see:",IDC_STATIC,5,155,65,8
+    LTEXT           "",IDC_ENCODERSITE,75,155,105,8
+END
+
+IDD_BROADCAST DIALOG  0, 0, 200, 255
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "required",IDC_STATIC,5,0,190,85
+    LTEXT           "Server",IDC_STATIC,10,10,35,8
+    EDITTEXT        IDC_THE_SERVER,55,8,70,12,ES_AUTOHSCROLL
+    LTEXT           "Mountpoint",IDC_STATIC,10,25,35,8
+    EDITTEXT        IDC_THE_MOUNTPOINT,55,23,70,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,10,40,35,8
+    EDITTEXT        IDC_THE_PORT,55,38,70,12,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,10,55,35,8
+    EDITTEXT        IDC_THE_PASSWORD,55,53,70,12,ES_AUTOHSCROLL
+    LTEXT           "User",IDC_STATIC,10,70,35,8
+    EDITTEXT        IDC_THE_USER,55,68,70,12,ES_AUTOHSCROLL
+    GROUPBOX        "Login Type",IDC_STATIC,140,8,50,70
+    CONTROL         "X-Audio",IDC_XAUDIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,145,18,40,10
+    CONTROL         "HTTP",IDC_HTTP,"Button",BS_AUTORADIOBUTTON,145,33,40,10
+    CONTROL         "Icy",IDC_ICY,"Button",BS_AUTORADIOBUTTON,145,48,40,10
+    CONTROL         "UDP",IDC_UDP,"Button",BS_AUTORADIOBUTTON,145,63,40,10
+    GROUPBOX        "optional",IDC_STATIC,5,90,190,100
+    LTEXT           "Name",IDC_STATIC,10,100,45,8
+    EDITTEXT        IDC_THE_STREAMNAME,55,98,135,12,ES_AUTOHSCROLL
+    LTEXT           "Genre",IDC_STATIC,10,115,45,8
+    EDITTEXT        IDC_THE_GENRE,55,113,135,12,ES_AUTOHSCROLL
+    LTEXT           "URL",IDC_STATIC,10,130,45,8
+    EDITTEXT        IDC_THE_INFO_URL,55,128,135,12,ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,10,145,45,8
+    EDITTEXT        IDC_THE_DESCRIPTION,55,143,135,12,ES_AUTOHSCROLL
+    LTEXT           "Dumpfile",IDC_STATIC,10,160,45,8
+    EDITTEXT        IDC_THE_DUMPFILE,55,158,70,12,ES_AUTOHSCROLL
+    LTEXT           "Buffer (s)",IDC_STATIC,10,175,45,8
+    EDITTEXT        IDC_THE_BUFFERSIZE,55,173,70,12,ES_AUTOHSCROLL
+    CONTROL         "Private",IDC_PRIVATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,175,55,10
+    GROUPBOX        "Automatic reconnect",IDC_STATIC,5,195,190,40
+    CONTROL         "Enable",IDC_RC_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,205,40,10
+    LTEXT           "Number of Retries",IDC_STATIC,10,220,58,8
+    EDITTEXT        IDC_RC_COUNT,80,218,25,12,ES_AUTOHSCROLL
+    LTEXT           "Initial Delay",IDC_STATIC,125,205,37,8
+    EDITTEXT        IDC_RC_IDELAY,165,203,25,12,ES_AUTOHSCROLL
+    LTEXT           "Delay",IDC_STATIC,125,220,19,8
+    EDITTEXT        IDC_RC_DELAY,165,218,25,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,145,238,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,90,238,50,14
+END
+
+IDD_SOUNDCARD DIALOGEX 0, 0, 196, 78
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Soundcard"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Soundcard:",IDC_STATIC,5,7,45,8
+    COMBOBOX        IDC_SOUNDLIST,50,5,140,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Soundformat:",IDC_STATIC,5,22,45,8
+    COMBOBOX        IDC_FREQUENCYLIST,50,20,140,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Buffer (s):",IDC_STATIC,5,37,45,8
+    EDITTEXT        IDC_SOUNDBUFFERS,50,35,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,140,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,57,50,14
+END
+
+IDD_TAG DIALOG  0, 0, 235, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ID3 Tag  Version 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Titel:",IDC_STATIC,5,7,16,8
+    EDITTEXT        IDC_TAG_TITLE,45,5,130,12,ES_AUTOHSCROLL
+    LTEXT           "Artist:",IDC_STATIC,5,22,18,8
+    EDITTEXT        IDC_TAG_ARTIST,45,20,130,12,ES_AUTOHSCROLL
+    LTEXT           "Album:",IDC_STATIC,5,37,20,8
+    EDITTEXT        IDC_TAG_ALBUM,45,35,130,12,ES_AUTOHSCROLL
+    LTEXT           "Year:",IDC_STATIC,5,52,16,8
+    EDITTEXT        IDC_TAG_YEAR,45,50,130,12,ES_AUTOHSCROLL
+    LTEXT           "Comment:",IDC_STATIC,5,67,32,8
+    EDITTEXT        IDC_TAG_COMMENT,45,65,130,12,ES_AUTOHSCROLL
+    LTEXT           "Track:",IDC_STATIC,5,82,22,8
+    EDITTEXT        IDC_TAG_TRACK,45,80,130,12,ES_AUTOHSCROLL
+    LTEXT           "Genre:",IDC_STATIC,5,97,22,8
+    COMBOBOX        IDC_TAG_GENRE,45,95,130,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,180,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,94,50,14
+END
+
+IDD_STARTUP DIALOG  0, 0, 185, 80
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Startup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Start minimized",IDC_MINIMIZED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,5,120,10
+    CONTROL         "Start broadcasting",IDC_BROADCASTING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,20,73,10
+    CONTROL         "Start recording",IDC_RECORDING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,35,120,10
+    CONTROL         "Start listening to soundcard",IDC_LISTENING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,50,120,10
+    CONTROL         "Start playing file",IDC_PLAYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,65,120,10
+    DEFPUSHBUTTON   "OK",IDOK,130,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,60,50,14
+END
+
+IDD_CONFIGURATION DIALOGEX 0, 0, 331, 335
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration Help"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,274,314,50,14
+    EDITTEXT        IDC_CONFIGURATION,7,7,317,297,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Open ...",                   ID_FILE_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save",                       ID_FILE_SAVE,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save &as ...",                ID_FILE_SAVEAS,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Exit",                       ID_FILE_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Options",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Soundcard ...",              ID_OPTIONS_SONDCARD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Volume Control ...",         ID_OPTIONS_VOLUMECOMPRESSION,MFT_STRING,MFS_ENABLED
+        MENUITEM "Add &Input ...",              ID_OPTIONS_INPUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Output ...",                 ID_OPTIONS_OUTPUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Broadcast ...",              ID_OPTIONS_BROADCAST,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Encoder ...",                ID_OPTIONS_ENCODER,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Tag ...",                    ID_OPTIONS_TAG,MFT_STRING,MFS_ENABLED
+        MENUITEM "Start&up ...",                ID_OPTIONS_STARTUP,MFT_STRING,MFS_ENABLED
+        MENUITEM "Errors as &Messages",         ID_OPTIONS_ERRORSASMESSAGES,MFT_STRING,MFS_ENABLED
+        MENUITEM "Show Mi&xer",                 ID_OPTIONS_MIXER,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Detach Volume Meter",        ID_OPTIONS_DETACH,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About ...",                  ID_HELP_ABOUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Content ...",                ID_HELP_M3W,MFT_STRING,MFS_ENABLED
+        MENUITEM "Configuration ...",           ID_HELP_CONFIGURATION,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_M3W                 ICON                    "m3w.ico"
+IDI_STOP                ICON                    "stop.ico"
+IDI_PAUSE               ICON                    "pause.ico"
+IDI_RECORD              ICON                    "record.ico"
+IDI_PLAY                ICON                    "play.ico"
+IDI_SEND                ICON                    "send.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VOLUMECOMPRESSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 235
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_SOUNDCARD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 190
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

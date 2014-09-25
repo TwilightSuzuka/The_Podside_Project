@@ -1,0 +1,88 @@
+M3W Copyright
+=============
+
+Except where otherwise noted, all of the documentation and software included
+in the m3w package is copyrighted by Martin Ruckert.
+
+Copyright (C) 2001-2003-2006 Martin Ruckert. All rights reserved.
+
+The lame_enc.dll included with this distributrion is copyright by Albert L Faber
+(see http://www.cdex.n3.net for details).
+
+LAME itself is under GPL (for details see the LAME Homepage at http://www.sulaco.org 
+or http://www.mp3dev.org).
+
+Be aware that lame_enc.dll might infringe certain MP3 related software patents
+held by Fraunhofer IIS in certain countries. 
+
+M3W Licence and Waranty Disclaimer
+==================================
+
+m3w is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+m3w is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public
+License along with m3w; if not, write to the
+Free Software Foundation, Inc., 
+59 Temple Place - Suite 330,
+Boston, MA 02111-1307, USA.
+
+The GNU General Public License is usualy found in the File COPYING.TXT
+Read it!
+
+Here is a short informal summary:
+
+Permission is granted to anyone to use this software,
+and to alter and to redistribute it,
+provided that the following conditions are met:
+
+1. All redistributions of files must retain all copyright
+   notices that are currently in place, and this list of conditions without
+   modification.
+
+2. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. 
+
+3. Modified versions must be plainly marked as
+   such, and must not be misrepresented as being the original software.
+
+While this licence gives you the right to modify and redistribute the 
+program as you please, I would like to inform you, that I consider
+it appropriate if you read the styleguide before you do so and that
+you can make me happy, if you inform me about use and changes you make
+of the program so that the program can be improved for all users. I will
+make any reasonable effort to merge changes into the main stream development 
+of m3w.
+
+While this software was developed in order to be usefull, it might not be.
+It might actually format your harddisk, kill your cat, ruin your family live, and perform
+other detrimental actions. While I am not aware of any such features of the program,
+I warn you: You use the program on your own risk. Dont blame me! The only help
+you will get from the author in these cases is the online help file.
+Sady, many do not read the manual, in spite of the work I put into it.
+
+To be precise: NO WARRANTY
+
+BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT
+PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO
+THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE
+COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. 
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY
+OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
+THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED
+BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR
+OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+Martin Ruckert
+ruckertm@acm.org
