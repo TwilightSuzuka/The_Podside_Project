@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -42,7 +43,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Start (Ignore Java VM crash logs)
+=======
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -55,5 +56,4 @@ Temporary Items
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-# End (Ignore Java VM crash logs)
-
+>>>>>>> f5758a01ad379d20a3fc81e87b6d59a49b0dca5d
